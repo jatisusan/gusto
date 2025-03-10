@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+/*=== BASE STYLES ====*/
+:root {
+	--font-base: "Cormorant Upright", serif;
+	--font-alt: "Open Sans", sans-serif;
+
+	--color-golden: #dcca87;
+	--color-black: #0c0c0c;
+	--color-grey: #aaaaaa;
+	--color-white: #ffffff;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--font-alt);
+	color: var(--color-white);
+}
+
+a {
+	color: unset;
+	text-decoration: none;
+}
+
+.container {
+	min-height: 100vh;
+	padding: 4rem 6rem;
+}
+
+.pattern__bg {
+	background: url("./assets/bgalt.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+.black__bg {
+	background-color: var(--color-black);
+}
+
+.hero__bg {
+	background: url("./assets/herobg.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: repeat;
+	padding: 1rem 6rem 4rem 6rem;
+	height: 100vh;
+}
+
+.custom__btn {
+	background-color: var(--color-golden);
+	color: var(--color-black);
+	font-family: var(--font-base);
+	font-weight: 700;
+	line-height: 28px;
+	font-size: 20px;
+	padding: 0.5rem 1.5rem;
+	border-radius: 1px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+.custom__btn:hover {
+	background-color: #c4b377;
+}
+
+.custom__btn__alt {
+	background-color: transparent;
+	color: var(--color-golden);
+	font-family: var(--font-base);
+	font-weight: 700;
+	line-height: 28px;
+	font-size: 20px;
+	padding: 0.45rem 1.5rem;
+	border-radius: 1px;
+	border: 1px solid var(--color-golden);
+	outline: none;
+	cursor: pointer;
+}
+
+.headtext__cormorant {
+	font-family: var(--font-base);
+	color: var(--color-golden);
+	font-size: 64px;
+	line-height: 83.2px;
+	letter-spacing: 0.04em;
+	text-transform: capitalize;
+}
+
+.p__cormorant {
+	font-family: var(--font-base);
+	color: var(--color-white);
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: capitalize;
+	line-height: 29.9px;
+	font-size: 23px;
+}
+
+.p__opensans {
+	font-family: var(--font-alt);
+	color: var(--color-white);
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	line-height: 28px;
+	font-size: 16px;
+}
+
+/*=== image rotation ====*/
+@keyframes rotate360 {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.rotating__image {
+	animation: rotate360 40s linear infinite;
+}
+
+@media screen and (max-width: 850px) {
+	.container {
+		padding: 4rem;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.container {
+		padding: 4rem 2rem;
+	}
+
+	.p__cormorant {
+		font-size: 21px;
+	}
+
+	.p__opensans {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.p__opensans {
+		font-size: 12px;
+	}
+
+	.p__cormorant {
+		font-size: 19px;
+	}
+
+	.headtext__cormorant {
+		font-size: 45px;
+		line-height: 70px;
+	}
+}
