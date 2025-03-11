@@ -51,7 +51,7 @@ a {
 	background-size: cover;
 	background-repeat: repeat;
 	padding: 1rem 6rem 4rem 6rem;
-	height: 100vh;
+	/* min-height: 100vh; */
 }
 
 .custom__btn {
@@ -114,6 +114,18 @@ a {
 	font-size: 16px;
 }
 
+@media (max-width: 850px) {
+	.hero__bg {
+		padding: 1rem 4rem;
+	}
+}
+
+@media (max-width: 650px) {
+	.hero__bg {
+		padding: 1rem 2rem;
+	}
+}
+
 /*=== image rotation ====*/
 @keyframes rotate360 {
 	from {
@@ -127,6 +139,256 @@ a {
 .rotating__image {
 	animation: rotate360 40s linear infinite;
 }
+
+/*=== navbar ====*/
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 3rem;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 4rem;
+}
+
+.nav-links a {
+	transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+	color: var(--color-golden);
+}
+
+@media (max-width: 1150px) {
+	.nav-links {
+		display: none;
+	}
+}
+
+/*=== hero section ====*/
+.hero-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hero-info {
+	flex: 1;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.hero-img {
+	flex: 1;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-left: 2rem;
+	overflow: hidden;
+}
+
+.hero-header {
+	color: var(--color-golden);
+	text-transform: uppercase;
+	font-family: var(--font-base);
+	font-size: 5rem;
+	line-height: 90px;
+	letter-spacing: 0.04em;
+	font-weight: 700;
+	margin-top: 2rem;
+}
+
+.buttons {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+}
+
+@media (max-width: 1150px) {
+	.hero-content {
+		flex-direction: column;
+		gap: 2rem;
+	}
+}
+@media (max-width: 1150px) {
+	.hero-header {
+		font-size: 4rem;
+		line-height: 70px;
+	}
+}
+
+.features-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4rem 6rem;
+	gap: 4rem;
+}
+
+.feature {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.feature-img {
+	width: 110px;
+	height: 110px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	border: 3px solid #333;
+	padding: 5px;
+}
+
+.feature-img img {
+	width: 60%;
+	height: 60%;
+}
+
+.feature-info {
+	flex: 1;
+}
+
+.feature-header {
+	color: var(--color-golden);
+	font-family: var(--font-base);
+	letter-spacing: 0.02em;
+	font-weight: 700;
+}
+
+.feature-text {
+	color: var(--color-grey);
+	font-family: var(--font-alt);
+	letter-spacing: 0.04em;
+	line-height: 24px;
+}
+
+@media (max-width: 1150px) {
+	.features-container {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+@media (max-width: 450px) {
+	.feature-img {
+		width: 90px;
+		height: 90px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.features-container {
+		padding: 4rem;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.features-container {
+		padding: 4rem 2rem;
+	}
+}
+
+/*=== aboutus section ====*/
+.aboutus-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.aboutus-overlay {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.aboutus-overlay img {
+	width: 391px;
+	height: 415px;
+	z-index: 0;
+}
+
+.aboutus-content {
+	z-index: 3;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.aboutus-content-knife img {
+	height: 690px;
+}
+
+.aboutus-content-knife {
+	margin: 0.5rem 4rem;
+}
+
+.aboutus-content-about {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	flex-direction: column;
+	text-align: right;
+}
+
+.aboutus-content-history {
+	flex: 1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	text-align: left;
+}
+
+.aboutus-content-about p,
+.aboutus-content-history p {
+	margin: 2rem 0;
+	color: var(--color-grey);
+}
+
+.aboutus-line {
+	width: 50%;
+	height: 15px;
+	background-color: var(--color-golden);
+}
+
+@media screen and (max-width: 1100px) {
+	.aboutus-content {
+		flex-direction: column;
+	}
+
+	.aboutus-content_knife {
+		margin: 4rem 0;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.aboutus-overlay img {
+		width: 70%;
+		height: 350px;
+	}
+
+	.aboutus-content_knife img {
+		height: 610px;
+	}
+}
+
+/*=== baseeee ====*/
 
 @media screen and (max-width: 850px) {
 	.container {
