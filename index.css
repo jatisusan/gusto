@@ -162,3 +162,112 @@ a {
 		line-height: 70px;
 	}
 }
+
+
+/* award section */
+
+
+
+.awards{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	flex: space-between;
+	width: 100%;
+	grid-template-columns: repeat(2,1fr);
+	gap: 1.5rem;
+	
+
+}
+.awards-item {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+	margin: 30px 0px;
+	gap: 1rem;
+}
+
+.awards-item img{
+	height: 100px;
+}
+
+.awards-item-content p{
+	font-size: 17px;
+	width: 100%;
+	
+
+}
+
+.stars{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	gap: 1rem;
+	margin-left: 50%;
+}
+.stars img{
+	width: 24px;
+	height: 24px;
+
+}
+
+/* gallery section */
+
+.title{
+	text-align: right;
+}
+
+.image{
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+}
+
+.image img{
+	width: 200px;
+	height: 300px;
+}
+
+.gallery .custom__btn{
+	width: 12%;
+	margin-top: 20px;
+	padding: 8px 28px;
+	margin-left: 47px;
+}
+
+/* contact section */
+
+.contact{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.contact-container .headtext__cormorant{
+	margin-bottom: 17px;
+}
+
+.contact-container .p__cormorant{
+	margin-top: 30px;
+	margin-bottom: 13px;
+	font-size: 39px;
+	
+}
+
+.contact-container .custom__btn{
+	margin-top: 30px;
+	width: 50%;
+	padding: 5px 10px;
+}
+
+
+.photo img{
+	border: 7px solid rgb(250, 224, 76);
+	border-radius: 50%;
+	padding: 20px;
+	margin-top: 7gi0px;
+}
+.contact-container .p__cormorant:first-child{
+	font-size: 30px;
+}
