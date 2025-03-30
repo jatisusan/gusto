@@ -108,12 +108,32 @@ a {
 	right: 20px;
 	z-index: 6;
 	cursor: pointer;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.3s ease-in-out;
 	display: none;
 }
 #scrollTopBtn:hover {
 	opacity: 14%;
 	scale: 1.2;
+}
+
+#vidControlBtn {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translateX(50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: #0c0c0c9a;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	font-size: 24px;
+}
+#vidControlBtn:hover {
+	background-color: #0c0c0cb2;
 }
 
 .headtext__cormorant {
@@ -156,7 +176,12 @@ a {
 	}
 }
 
-/*=== image rotation ====*/
+
+/*=== ANIMATIONS ====*/
+@keyframes blink {
+	50% {opacity: 0;};
+}
+
 @keyframes rotate360 {
 	from {
 		transform: rotate(0deg);
@@ -654,6 +679,21 @@ nav {
 	line-height: 41.6px;
 	letter-spacing: 0.04em;
 	font-weight: 700;
+}
+
+#typing-text {
+	display: block;
+	min-height: 168px;
+    
+}
+#typing-text::after {
+	content: "|";
+	color: var(--color-golden);
+	display: inline-block;
+	line-height: 28px;
+	font-size: 20px;
+	font-weight: 900;
+	animation: blink 0.8s infinite;
 }
 
 @media (max-width: 1100px) {

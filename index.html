@@ -11,15 +11,15 @@
 		/>
 	</head>
 	<body>
-		<button id="scrollTopBtn"> 
-			<i class="fa fa-angle-up" style="font-size: 25px;"></i>
+		<button id="scrollTopBtn">
+			<i class="fa fa-angle-up" style="font-size: 25px"></i>
 		</button>
 		<!--=== HERO SECTION ====-->
 		<section class="hero__bg">
 			<nav>
 				<div class="navbar">
 					<img src="assets/logo.png" alt="logo" width="160" />
-	
+
 					<div class="nav-links">
 						<a href="#about" class="nav-link">About</a>
 						<a href="#menu" class="nav-link">Menu</a>
@@ -27,24 +27,34 @@
 						<a href="#gallery" class="nav-link">Gallery</a>
 						<a href="#contact" class="nav-link">Contact</a>
 					</div>
-	
+
 					<div class="nav-buttons">
 						<button class="custom__btn">
 							<a href="./pages/login/login.html">Login</a>
-						</button>	
+						</button>
 						<i class="fa fa-bars" id="menu-btn"></i>
 					</div>
 				</div>
-	
+
 				<div id="navbar-small">
-					<img src="assets/close.svg" alt="close" id="close-btn">
-	
+					<img src="assets/close.svg" alt="close" id="close-btn" />
+
 					<div class="navbar-small-links">
-						<a href="#about" class="p__cormorant" id="navbar-small-links-item">About</a>
-						<a href="#menu" class="p__cormorant" id="navbar-small-links-item">Menu</a>
-						<a href="#awards" class="p__cormorant" id="navbar-small-links-item">Awards</a>
-						<a href="#gallery" class="p__cormorant" id="navbar-small-links-item">Gallery</a>
-						<a href="#contact" class="p__cormorant" id="navbar-small-links-item">Contact</a>
+						<a href="#about" class="p__cormorant" id="navbar-small-links-item"
+							>About</a
+						>
+						<a href="#menu" class="p__cormorant" id="navbar-small-links-item"
+							>Menu</a
+						>
+						<a href="#awards" class="p__cormorant" id="navbar-small-links-item"
+							>Awards</a
+						>
+						<a href="#gallery" class="p__cormorant" id="navbar-small-links-item"
+							>Gallery</a
+						>
+						<a href="#contact" class="p__cormorant" id="navbar-small-links-item"
+							>Contact</a
+						>
 					</div>
 				</div>
 			</nav>
@@ -227,14 +237,7 @@
 								share with you.
 							</p>
 						</div>
-						<p class="p__opensans">
-							Every dish is a chapter of passion, tradition, and creativity that
-							I hope brings joy to your table. As a chef, I believe that food is
-							more than just sustenance—it's a way to connect, to tell stories,
-							and to create memories. We take pride in preparing every dish with
-							care and passion, honoring the flavors that come from our roots
-							while also embracing creativity.
-						</p>
+						<p class="p__opensans" id="typing-text"></p>
 					</div>
 
 					<div class="chef-sign">
@@ -254,7 +257,10 @@
 					<img src="assets/spoon.png" alt="spoon" />
 					<h1 class="headtext__cormorant">A Taste of Elegance</h1>
 				</div>
-				<video src="assets/meal.mp4" autoplay loop></video>
+				<video src="assets/meal.mp4" id="restaurantVideo"></video>
+				<div id="vidControlBtn">
+					<i class="fa fa-play"></i>
+				</div>
 			</div>
 		</section>
 
@@ -452,7 +458,6 @@
 				</div>
 			</div>
 		</footer>
-
 
 		<script type="text/javascript" src="index.js"></script>
 	</body>
