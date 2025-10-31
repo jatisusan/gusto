@@ -1,464 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Gusto Restaurant</title>
-		<link rel="stylesheet" href="./index.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-		/>
-	</head>
-	<body>
-		<button id="scrollTopBtn">
-			<i class="fa fa-angle-up" style="font-size: 25px"></i>
-		</button>
-		<!--=== HERO SECTION ====-->
-		<section class="hero__bg">
-			<nav>
-				<div class="navbar">
-					<img src="assets/logo.png" alt="logo" width="160" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gusto Restaurant</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <button id="scrollTopBtn">
+      <i class="fa fa-angle-up" style="font-size: 25px"></i>
+    </button>
+    <!--=== HERO SECTION ====-->
+    <section class="hero__bg">
+      <nav>
+        <div class="navbar">
+          <img src="assets/logo.png" alt="logo" width="160" />
 
-					<div class="nav-links">
-						<a href="#about" class="nav-link">About</a>
-						<a href="#menu" class="nav-link">Menu</a>
-						<a href="#awards" class="nav-link">Awards</a>
-						<a href="#gallery" class="nav-link">Gallery</a>
-						<a href="#contact" class="nav-link">Contact</a>
-					</div>
+          <div class="nav-links">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#menu" class="nav-link">Menu</a>
+            <a href="#awards" class="nav-link">Awards</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </div>
 
-					<div class="nav-buttons">
-						<button class="custom__btn">
-							<a href="./pages/login/login.html">Login</a>
-						</button>
-						<i class="fa fa-bars" id="menu-btn"></i>
-					</div>
-				</div>
+          <div class="nav-buttons">
+            <button class="custom__btn">
+              <a href="./pages/login/login.html">Login</a>
+            </button>
+            <i class="fa fa-bars" id="menu-btn"></i>
+          </div>
+        </div>
 
-				<div id="navbar-small">
-					<img src="assets/close.svg" alt="close" id="close-btn" />
+        <div id="navbar-small">
+          <img src="assets/close.svg" alt="close" id="close-btn" />
 
-					<div class="navbar-small-links">
-						<a href="#about" class="p__cormorant" id="navbar-small-links-item"
-							>About</a
-						>
-						<a href="#menu" class="p__cormorant" id="navbar-small-links-item"
-							>Menu</a
-						>
-						<a href="#awards" class="p__cormorant" id="navbar-small-links-item"
-							>Awards</a
-						>
-						<a href="#gallery" class="p__cormorant" id="navbar-small-links-item"
-							>Gallery</a
-						>
-						<a href="#contact" class="p__cormorant" id="navbar-small-links-item"
-							>Contact</a
-						>
-					</div>
-				</div>
-			</nav>
-			<div class="hero-content">
-				<div class="hero-info">
-					<p class="p__cormorant">Flavors to remember</p>
-					<img src="assets/spoon.png" alt="spoon" />
-					<h1 class="hero-header">Delight in every bite</h1>
-					<p class="p__opensans" style="margin: 2rem 0">
-						Indulge in a world of exquisite flavors, crafted with care and
-						served with elegance. Experience dining at its best.
-					</p>
-					<div class="buttons">
-						<button class="custom__btn">
-							<a href="./pages/reservation/reservation.html">Book a Table</a>
-						</button>
-						<button class="custom__btn__alt">
-							<a href="./pages/menu/menu.html">Explore Menu</a>
-						</button>
-					</div>
-				</div>
-				<div class="hero-img">
-					<img
-						src="assets/plate.png"
-						alt="plate"
-						class="rotating__image plate"
-						width="80%"
-					/>
-				</div>
-			</div>
-		</section>
-		<section class="black__bg">
-			<div class="features-container">
-				<div class="feature">
-					<div class="feature-img">
-						<img src="assets/restaurant.png" alt="dining" />
-					</div>
-					<div class="feature-info">
-						<h2 class="feature-header">Premium Dining</h2>
-						<p class="feature-text">
-							Elegant ambiance, quality ingredients, and exceptional service.
-						</p>
-					</div>
-				</div>
-				<div class="feature">
-					<div class="feature-img">
-						<img src="assets/seasoning.png" alt="seasoning" />
-					</div>
-					<div class="feature-info">
-						<h2 class="feature-header">Abundant Flavors</h2>
-						<p class="feature-text">
-							A variety of vibrant flavors, expertly blended for every taste.
-						</p>
-					</div>
-				</div>
-				<div class="feature">
-					<div class="feature-img">
-						<img src="assets/tray.png" alt="tray" />
-					</div>
-					<div class="feature-info">
-						<h2 class="feature-header">Exquisite Plates</h2>
-						<p class="feature-text">
-							Beautifully presented, irresistibly delicious. A feast for the
-							eyes and the palate.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+          <div class="navbar-small-links">
+            <a href="#about" class="p__cormorant" id="navbar-small-links-item"
+              >About</a
+            >
+            <a href="#menu" class="p__cormorant" id="navbar-small-links-item"
+              >Menu</a
+            >
+            <a href="#awards" class="p__cormorant" id="navbar-small-links-item"
+              >Awards</a
+            >
+            <a href="#gallery" class="p__cormorant" id="navbar-small-links-item"
+              >Gallery</a
+            >
+            <a href="#contact" class="p__cormorant" id="navbar-small-links-item"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <div class="hero-info">
+          <p class="p__cormorant">Flavors to remember</p>
+          <img src="assets/spoon.png" alt="spoon" />
+          <h1 class="hero-header">Delight in every bite</h1>
+          <p class="p__opensans" style="margin: 2rem 0">
+            Indulge in a world of exquisite flavors, crafted with care and
+            served with elegance. Experience dining at its best.
+          </p>
+          <div class="buttons">
+            <button class="custom__btn">
+              <a href="./pages/reservation/reservation.html">Book a Table</a>
+            </button>
+            <button class="custom__btn__alt">
+              <a href="./pages/menu/menu.html">Explore Menu</a>
+            </button>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img
+            src="assets/plate.webp"
+            alt="plate"
+            class="rotating__image plate"
+            width="80%"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="black__bg">
+      <div class="features-container">
+        <div class="feature">
+          <div class="feature-img">
+            <img src="assets/restaurant.png" alt="dining" />
+          </div>
+          <div class="feature-info">
+            <h2 class="feature-header">Premium Dining</h2>
+            <p class="feature-text">
+              Elegant ambiance, quality ingredients, and exceptional service.
+            </p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-img">
+            <img src="assets/seasoning.png" alt="seasoning" />
+          </div>
+          <div class="feature-info">
+            <h2 class="feature-header">Abundant Flavors</h2>
+            <p class="feature-text">
+              A variety of vibrant flavors, expertly blended for every taste.
+            </p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-img">
+            <img src="assets/tray.png" alt="tray" />
+          </div>
+          <div class="feature-info">
+            <h2 class="feature-header">Exquisite Plates</h2>
+            <p class="feature-text">
+              Beautifully presented, irresistibly delicious. A feast for the
+              eyes and the palate.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!--=== ABOUT SECTION ====-->
-		<section class="container pattern__bg" id="about">
-			<div class="aboutus-container">
-				<div class="aboutus-overlay">
-					<img src="assets/G.png" alt="G" />
-				</div>
+    <!--=== ABOUT SECTION ====-->
+    <section class="container pattern__bg" id="about">
+      <div class="aboutus-container">
+        <div class="aboutus-overlay">
+          <img src="assets/G.webp" alt="G" />
+        </div>
 
-				<div class="aboutus-content">
-					<div class="aboutus-content-about">
-						<h1 class="headtext__cormorant">About Us</h1>
-						<img src="assets/spoon.png" alt="spoon" />
-						<p class="p__opensans">
-							We believe that dining is more than just a meal—it's an
-							experience. With a focus on quality, comfort, and elegance, we
-							offer a warm and welcoming space where great food and good times
-							come together. Every dish is crafted with care and love to bring
-							you flavors that feel both familiar and special.
-						</p>
-						<div class="aboutus-line"></div>
-						<p class="p__cormorant" style="color: white">Quality Above All</p>
-					</div>
+        <div class="aboutus-content">
+          <div class="aboutus-content-about">
+            <h1 class="headtext__cormorant">About Us</h1>
+            <img src="assets/spoon.png" alt="spoon" />
+            <p class="p__opensans">
+              We believe that dining is more than just a meal—it's an
+              experience. With a focus on quality, comfort, and elegance, we
+              offer a warm and welcoming space where great food and good times
+              come together. Every dish is crafted with care and love to bring
+              you flavors that feel both familiar and special.
+            </p>
+            <div class="aboutus-line"></div>
+            <p class="p__cormorant" style="color: white">Quality Above All</p>
+          </div>
 
-					<div class="aboutus-content-knife">
-						<img src="assets/knife.png" alt="knife" />
-					</div>
+          <div class="aboutus-content-knife">
+            <img src="assets/knife.png" alt="knife" />
+          </div>
 
-					<div class="aboutus-content-history">
-						<h1 class="headtext__cormorant">Our History</h1>
-						<img
-							src="assets/spoon.png"
-							alt="spoon"
-							style="transform: rotate(180deg)"
-						/>
-						<p class="p__opensans">
-							Our journey began with a passion for great food and heartfelt
-							hospitality. From a humble idea to a beloved dining destination,
-							we have stayed true to our roots—serving delicious meals made with
-							tradition, care, and creativity. Every plate tells a story, and we
-							are proud to share ours with you.
-						</p>
-						<div class="aboutus-line"></div>
-						<p class="p__cormorant" style="color: white">Serving Since 2006</p>
-					</div>
-				</div>
-			</div>
-		</section>
+          <div class="aboutus-content-history">
+            <h1 class="headtext__cormorant">Our History</h1>
+            <img
+              src="assets/spoon.png"
+              alt="spoon"
+              style="transform: rotate(180deg)"
+            />
+            <p class="p__opensans">
+              Our journey began with a passion for great food and heartfelt
+              hospitality. From a humble idea to a beloved dining destination,
+              we have stayed true to our roots—serving delicious meals made with
+              tradition, care, and creativity. Every plate tells a story, and we
+              are proud to share ours with you.
+            </p>
+            <div class="aboutus-line"></div>
+            <p class="p__cormorant" style="color: white">Serving Since 2006</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!--=== TODAY'S SPECIAL SECTION ====-->
-		<section class="container black__bg" id="menu">
-			<div class="today-container">
-				<div class="today-heading">
-					<p class="p__cormorant">Flavors Curated for You</p>
-					<img src="assets/spoon.png" alt="spoon" />
-					<h1 class="headtext__cormorant">Today's Special</h1>
-				</div>
+    <!--=== TODAY'S SPECIAL SECTION ====-->
+    <section class="container black__bg" id="menu">
+      <div class="today-container">
+        <div class="today-heading">
+          <p class="p__cormorant">Flavors Curated for You</p>
+          <img src="assets/spoon.png" alt="spoon" />
+          <h1 class="headtext__cormorant">Today's Special</h1>
+        </div>
 
-				<div class="today-content">
-					<div class="today-content-item">
-						<img src="assets/special1.png" alt="steak" />
-						<h2>Grilled Steak</h2>
-						<p class="p__opensans">
-							Juicy, tender steak grilled to perfection, served with a side of
-							roasted potatoes.
-						</p>
-						<p class="p__cormorant">Rs. 1200</p>
-					</div>
-					<div class="today-content-item">
-						<img src="assets/special2.png" alt="biryani" />
-						<h2>Handi Biryani</h2>
-						<p class="p__opensans">
-							Fragrant basmati rice, tender marinated meat, aromatic spices,
-							served with raita.
-						</p>
-						<p class="p__cormorant">Rs. 950</p>
-					</div>
-					<div class="today-content-item">
-						<img src="assets/special3.png" alt="teriyaki" />
-						<h2>Pork Teriyaki</h2>
-						<p class="p__opensans">
-							Tender slices of pork, caramelized in a savory-sweet teriyaki
-							glaze.
-						</p>
-						<p class="p__cormorant">Rs. 900</p>
-					</div>
-				</div>
+        <div class="today-content">
+          <div class="today-content-item">
+            <img src="assets/special1.png" alt="steak" loading="lazy" />
+            <h2>Grilled Steak</h2>
+            <p class="p__opensans">
+              Juicy, tender steak grilled to perfection, served with a side of
+              roasted potatoes.
+            </p>
+            <p class="p__cormorant">Rs. 1200</p>
+          </div>
+          <div class="today-content-item">
+            <img src="assets/special2.png" alt="biryani" loading="lazy" />
+            <h2>Handi Biryani</h2>
+            <p class="p__opensans">
+              Fragrant basmati rice, tender marinated meat, aromatic spices,
+              served with raita.
+            </p>
+            <p class="p__cormorant">Rs. 950</p>
+          </div>
+          <div class="today-content-item">
+            <img src="assets/special3.png" alt="teriyaki" loading="lazy" />
+            <h2>Pork Teriyaki</h2>
+            <p class="p__opensans">
+              Tender slices of pork, caramelized in a savory-sweet teriyaki
+              glaze.
+            </p>
+            <p class="p__cormorant">Rs. 900</p>
+          </div>
+        </div>
 
-				<button class="custom__btn">
-					<a href="./pages/menu/menu.html">View Full Menu</a>
-				</button>
-			</div>
-		</section>
+        <button class="custom__btn">
+          <a href="./pages/menu/menu.html">View Full Menu</a>
+        </button>
+      </div>
+    </section>
 
-		<!--=== CHEF'S WORD SECTION ====-->
-		<section class="container pattern__bg">
-			<div class="chef-wrapper">
-				<div class="chef-wrapper-img">
-					<img src="assets/chef.png" alt="chef" />
-				</div>
+    <!--=== CHEF'S WORD SECTION ====-->
+    <section class="container pattern__bg">
+      <div class="chef-wrapper">
+        <div class="chef-wrapper-img">
+          <img src="assets/chef.webp" alt="chef" loading="lazy" />
+        </div>
 
-				<div class="chef-wrapper-info">
-					<p class="p__cormorant">Chef's word</p>
-					<img src="assets/spoon.png" alt="spoon" />
-					<h1 class="headtext__cormorant">What we believe in</h1>
+        <div class="chef-wrapper-info">
+          <p class="p__cormorant">Chef's word</p>
+          <img src="assets/spoon.png" alt="spoon" />
+          <h1 class="headtext__cormorant">What we believe in</h1>
 
-					<div class="chef-content">
-						<div class="chef-content-quote">
-							<img src="assets/quote.png" alt="quote" />
-							<p class="p__opensans">
-								Food is my language, and each plate is a story I'm eager to
-								share with you.
-							</p>
-						</div>
-						<p class="p__opensans" id="typing-text"></p>
-					</div>
+          <div class="chef-content">
+            <div class="chef-content-quote">
+              <img src="assets/quote.png" alt="quote" />
+              <p class="p__opensans">
+                Food is my language, and each plate is a story I'm eager to
+                share with you.
+              </p>
+            </div>
+            <p class="p__opensans" id="typing-text"></p>
+          </div>
 
-					<div class="chef-sign">
-						<p>John Doe</p>
-						<p class="p__opensans">Chef & Founder</p>
-						<img src="assets/signature.png" alt="signature" />
-					</div>
-				</div>
-			</div>
-		</section>
+          <div class="chef-sign">
+            <p>John Doe</p>
+            <p class="p__opensans">Chef & Founder</p>
+            <img src="assets/signature.png" alt="signature" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!--=== VIDEO SECTION ====-->
-		<section class="black__bg">
-			<div class="video-container">
-				<div class="video-overlay">
-					<p class="p__cormorant">Experience Gusto</p>
-					<img src="assets/spoon.png" alt="spoon" />
-					<h1 class="headtext__cormorant">A Taste of Elegance</h1>
-				</div>
-				<video src="assets/meal.mp4" id="restaurantVideo"></video>
-				<div id="vidControlBtn">
-					<i class="fa fa-play"></i>
-				</div>
-			</div>
-		</section>
+    <!--=== VIDEO SECTION ====-->
+    <section class="black__bg">
+      <div class="video-container">
+        <div class="video-overlay">
+          <p class="p__cormorant">Experience Gusto</p>
+          <img src="assets/spoon.png" alt="spoon" />
+          <h1 class="headtext__cormorant">A Taste of Elegance</h1>
+        </div>
+        <video
+          src="assets/meal.mp4"
+          id="restaurantVideo"
+          muted
+          preload="metadata"
+          poster="assets/thumbnail.webp"
+        >
+          Your browser does not support the video.
+        </video>
+        <div id="vidControlBtn">
+          <i class="fa fa-play"></i>
+        </div>
+      </div>
+    </section>
 
-		<!--=== AWARDS SECTION ====-->
-		<section class="container pattern__bg" id="awards">
-			<div class="awards-container">
-				<div class="awards-heading">
-					<p class="p__cormorant">Laurels</p>
-					<img src="assets/spoon.png" alt="spoon" />
-					<h1 class="headtext__cormorant">Awards & Recognition</h1>
-				</div>
+    <!--=== AWARDS SECTION ====-->
+    <section class="container pattern__bg" id="awards">
+      <div class="awards-container">
+        <div class="awards-heading">
+          <p class="p__cormorant">Laurels</p>
+          <img src="assets/spoon.png" alt="spoon" />
+          <h1 class="headtext__cormorant">Awards & Recognition</h1>
+        </div>
 
-				<div class="awards-info">
-					<div class="awards-info-item">
-						<img src="assets/award01.png" alt="laurel" />
-						<div>
-							<h3>Customer's Choice Award - 2025</h3>
-							<p class="p__opensans">
-								Voted as the favorite dining spot by our loyal customers.
-							</p>
-						</div>
-					</div>
-					<div class="awards-info-item">
-						<img src="assets/award02.png" alt="laurel" />
-						<div>
-							<h3>Top Service Excellence - 2023</h3>
-							<p class="p__opensans">
-								Recognized for providing outstanding customer service and
-								creating memorable dining experiences.
-							</p>
-						</div>
-					</div>
-					<div class="awards-info-item">
-						<img src="assets/award05.png" alt="laurel" />
-						<div>
-							<h3>Culinary Innovation - 2022</h3>
-							<p class="p__opensans">
-								Honored for creativity and innovation in the kitchen, offering a
-								unique and exciting menu.
-							</p>
-						</div>
-					</div>
-					<div class="awards-info-item">
-						<img src="assets/award03.png" alt="laurel" />
-						<div>
-							<h3>Outstanding Chef - 2022</h3>
-							<p class="p__opensans">
-								Recognized for culinary excellence, creativity, and leadership
-								in the kitchen.
-							</p>
-						</div>
-					</div>
-				</div>
+        <div class="awards-info">
+          <div class="awards-info-item">
+            <img src="assets/award01.webp" alt="laurel" loading="lazy" />
+            <div>
+              <h3>Customer's Choice Award - 2025</h3>
+              <p class="p__opensans">
+                Voted as the favorite dining spot by our loyal customers.
+              </p>
+            </div>
+          </div>
+          <div class="awards-info-item">
+            <img src="assets/award02.webp" alt="laurel" loading="lazy" />
+            <div>
+              <h3>Top Service Excellence - 2023</h3>
+              <p class="p__opensans">
+                Recognized for providing outstanding customer service and
+                creating memorable dining experiences.
+              </p>
+            </div>
+          </div>
+          <div class="awards-info-item">
+            <img src="assets/award05.webp" alt="laurel" loading="lazy" />
+            <div>
+              <h3>Culinary Innovation - 2022</h3>
+              <p class="p__opensans">
+                Honored for creativity and innovation in the kitchen, offering a
+                unique and exciting menu.
+              </p>
+            </div>
+          </div>
+          <div class="awards-info-item">
+            <img src="assets/award03.webp" alt="laurel" loading="lazy" />
+            <div>
+              <h3>Outstanding Chef - 2022</h3>
+              <p class="p__opensans">
+                Recognized for culinary excellence, creativity, and leadership
+                in the kitchen.
+              </p>
+            </div>
+          </div>
+        </div>
 
-				<div class="awards-stars">
-					<img src="assets/star.png" alt="stars" />
-					<img src="assets/star.png" alt="stars" />
-					<img src="assets/star.png" alt="stars" />
-					<img src="assets/star.png" alt="stars" />
-					<img src="assets/star.png" alt="stars" />
-				</div>
-			</div>
-		</section>
+        <div class="awards-stars">
+          <img src="assets/star.png" alt="stars" loading="lazy" />
+          <img src="assets/star.png" alt="stars" loading="lazy" />
+          <img src="assets/star.png" alt="stars" loading="lazy" />
+          <img src="assets/star.png" alt="stars" loading="lazy" />
+          <img src="assets/star.png" alt="stars" loading="lazy" />
+        </div>
+      </div>
+    </section>
 
-		<!--=== GALLERY SECTION ====-->
-		<section class="container black__bg" id="gallery">
-			<div class="gallery-wrapper">
-				<div class="gallery-title">
-					<p class="p__cormorant">A Glimpse into our world</p>
-					<img src="assets/spoon.png" alt="spoon" />
-					<h1 class="headtext__cormorant">Photo Gallery</h1>
-				</div>
+    <!--=== GALLERY SECTION ====-->
+    <section class="container black__bg" id="gallery">
+      <div class="gallery-wrapper">
+        <div class="gallery-title">
+          <p class="p__cormorant">A Glimpse into our world</p>
+          <img src="assets/spoon.png" alt="spoon" />
+          <h1 class="headtext__cormorant">Photo Gallery</h1>
+        </div>
 
-				<div class="gallery-images">
-					<div class="gallery-item">
-						<img src="assets/gallery1.jpg" alt="gallery1" />
-					</div>
-					<div class="gallery-item">
-						<img src="assets/gallery2.jpg" alt="gallery2" />
-					</div>
-					<div class="gallery-item">
-						<img src="assets/gallery3.jpg" alt="gallery3" />
-					</div>
-					<div class="gallery-item">
-						<img src="assets/gallery4.jpg" alt="gallery4" />
-					</div>
-					<div class="gallery-item">
-						<img src="assets/gallery5.jpg" alt="gallery5" />
-					</div>
-				</div>
+        <div class="gallery-images">
+          <div class="gallery-item">
+            <img src="assets/gallery1.webp" alt="gallery1" loading="lazy" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/gallery2.webp" alt="gallery2" loading="lazy" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/gallery3.webp" alt="gallery3" loading="lazy" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/gallery4.webp" alt="gallery4" loading="lazy" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/gallery5.webp" alt="gallery5" loading="lazy" />
+          </div>
+        </div>
 
-				<div class="gallery-button">
-					<button class="custom__btn">
-						<a href="www.instagram.com" target="_blank"> View more </a>
-					</button>
-				</div>
-			</div>
-		</section>
+        <div class="gallery-button">
+          <button class="custom__btn">
+            <a href="www.instagram.com" target="_blank"> View more </a>
+          </button>
+        </div>
+      </div>
+    </section>
 
-		<!--=== CONTACT SECTION ====-->
-		<section class="container pattern__bg" id="contact">
-			<div class="contact-wrapper">
-				<div class="contact-wrapper-info">
-					<div class="contact-heading">
-						<p class="p__cormorant">Get in touch</p>
-						<img src="assets/spoon.png" alt="spoon" />
-						<h1 class="headtext__cormorant">Contact Us</h1>
-					</div>
+    <!--=== CONTACT SECTION ====-->
+    <section class="container pattern__bg" id="contact">
+      <div class="contact-wrapper">
+        <div class="contact-wrapper-info">
+          <div class="contact-heading">
+            <p class="p__cormorant">Get in touch</p>
+            <img src="assets/spoon.png" alt="spoon" />
+            <h1 class="headtext__cormorant">Contact Us</h1>
+          </div>
 
-					<div class="contact-info">
-						<p class="p__opensans">
-							Location: Durbar Marg, Kathmandu 44600, Nepal
-						</p>
-						<p class="p__opensans">Phone: 6612495 | 6602154</p>
-						<p class="p__opensans">Email: contact@gustorestaurant.pro</p>
-						<h4 class="p__cormorant">Opening hours</h4>
-						<p class="p__opensans">Monday - Friday: 11:00 AM - 10:00 PM</p>
-						<p class="p__opensans">Saturday - Sunday: 10:00 AM - 11:00 PM</p>
-					</div>
+          <div class="contact-info">
+            <p class="p__opensans">
+              Location: Durbar Marg, Kathmandu 44600, Nepal
+            </p>
+            <p class="p__opensans">Phone: 6612495 | 6602154</p>
+            <p class="p__opensans">Email: contact@gustorestaurant.pro</p>
+            <h4 class="p__cormorant">Opening hours</h4>
+            <p class="p__opensans">Monday - Friday: 11:00 AM - 10:00 PM</p>
+            <p class="p__opensans">Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+          </div>
 
-					<button class="custom__btn">
-						<a href="./pages/reservation/reservation.html"
-							>Make A Reservation</a
-						>
-					</button>
-				</div>
+          <button class="custom__btn">
+            <a href="./pages/reservation/reservation.html"
+              >Make A Reservation</a
+            >
+          </button>
+        </div>
 
-				<div class="contact-wrapper-img">
-					<img src="assets/stamp.png" alt="contact" class="rotating__image" />
-				</div>
-			</div>
-		</section>
+        <div class="contact-wrapper-img">
+          <img
+            src="assets/stamp.png"
+            alt="contact"
+            class="rotating__image"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
 
-		<!--=== NEWSLETTER SECTION ====-->
-		<section class="newsletter-container">
-			<div class="newsletter-overlay">
-				<div class="newsletter-overlay-black"></div>
-				<div class="newsletter-overlay-pattern pattern__bg"></div>
-			</div>
-			<div class="newsletter-content">
-				<p class="p__cormorant">Newsletter</p>
-				<img src="assets/spoon.png" alt="spoon" />
-				<h2 class="form-heading">Subscribe to our newsletter</h2>
-				<p class="p__opensans">
-					Stay updated with our latest news, events, and special offers.
-				</p>
-				<form class="newsletter-form">
-					<input
-						type="email"
-						placeholder="Enter your email"
-						class="newsletter-input"
-					/>
-					<button class="custom__btn">Subscribe</button>
-				</form>
-			</div>
-		</section>
+    <!--=== NEWSLETTER SECTION ====-->
+    <section class="newsletter-container">
+      <div class="newsletter-overlay">
+        <div class="newsletter-overlay-black"></div>
+        <div class="newsletter-overlay-pattern pattern__bg"></div>
+      </div>
+      <div class="newsletter-content">
+        <p class="p__cormorant">Newsletter</p>
+        <img src="assets/spoon.png" alt="spoon" />
+        <h2 class="form-heading">Subscribe to our newsletter</h2>
+        <p class="p__opensans">
+          Stay updated with our latest news, events, and special offers.
+        </p>
+        <form class="newsletter-form">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="newsletter-input"
+          />
+          <button class="custom__btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
 
-		<!--=== FOOTER SECTION ====-->
-		<footer class="pattern__bg">
-			<div class="footer-container">
-				<div class="footer-links">
-					<div class="footer-links-contact">
-						<h2 class="footer-headtext">Find Us</h2>
-						<p class="p__opensans">Durbar Marg, Kathmandu, Nepal</p>
-						<p class="p__opensans">6612495 | 6602154</p>
-						<p class="p__opensans"></p>
-						<p class="p__opensans">contact@gustorestaurant.pro</p>
-					</div>
+    <!--=== FOOTER SECTION ====-->
+    <footer class="pattern__bg">
+      <div class="footer-container">
+        <div class="footer-links">
+          <div class="footer-links-contact">
+            <h2 class="footer-headtext">Find Us</h2>
+            <p class="p__opensans">Durbar Marg, Kathmandu, Nepal</p>
+            <p class="p__opensans">6612495 | 6602154</p>
+            <p class="p__opensans"></p>
+            <p class="p__opensans">contact@gustorestaurant.pro</p>
+          </div>
 
-					<div class="footer-links-logo">
-						<img src="assets/logo.png" alt="logo" width="160" />
-						<p>
-							"The best way to find yourself is to lose yourself in the service
-							of others."
-						</p>
-						<img src="assets/spoon.png" alt="spoon" />
-						<div class="footer-links-social">
-							<i class="fa fa-facebook"></i>
-							<i class="fa fa-twitter"></i>
-							<i class="fa fa-instagram"></i>
-						</div>
-					</div>
+          <div class="footer-links-logo">
+            <img src="assets/logo.png" alt="logo" width="160" loading="lazy" />
+            <p>
+              "The best way to find yourself is to lose yourself in the service
+              of others."
+            </p>
+            <img src="assets/spoon.png" alt="spoon" />
+            <div class="footer-links-social">
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-twitter"></i>
+              <i class="fa fa-instagram"></i>
+            </div>
+          </div>
 
-					<div class="footer-links-work">
-						<h2 class="footer-headtext">Working Hours</h2>
-						<p className="p__opensans">Monday-Friday:</p>
-						<p className="p__opensans">11:00 am - 10:00 pm</p>
-						<p className="p__opensans">Saturday-Sunday:</p>
-						<p className="p__opensans">10:00 am - 11:00 pm</p>
-					</div>
-				</div>
+          <div class="footer-links-work">
+            <h2 class="footer-headtext">Working Hours</h2>
+            <p class="p__opensans">Monday-Friday:</p>
+            <p class="p__opensans">11:00 am - 10:00 pm</p>
+            <p class="p__opensans">Saturday-Sunday:</p>
+            <p class="p__opensans">10:00 am - 11:00 pm</p>
+          </div>
+        </div>
 
-				<div class="footer-copyright">
-					<p>© 2025 Gusto Restaurant. All rights reserved.</p>
-				</div>
-			</div>
-		</footer>
+        <div class="footer-copyright">
+          <p>© 2025 Gusto Restaurant. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
 
-		<script type="text/javascript" src="index.js"></script>
-	</body>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
 </html>

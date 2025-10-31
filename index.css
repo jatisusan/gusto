@@ -40,7 +40,7 @@ a {
 }
 
 .pattern__bg {
-	background: url("./assets/bgalt.jpg");
+	background: url("./assets/bgalt.webp");
 	background-position: center;
 	background-size: cover;
 	background-repeat: repeat;
@@ -52,7 +52,7 @@ a {
 }
 
 .hero__bg {
-	background: url("./assets/herobg.jpg");
+	background: url("./assets/herobg.webp");
 	background-position: center;
 	background-size: cover;
 	background-repeat: repeat;
